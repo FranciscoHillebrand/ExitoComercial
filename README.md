@@ -29,20 +29,24 @@ Dado que los datos provenían de fuentes planas, fue necesario diseñar un model
 
 ## 💡 Insights Clave de Negocio
 
-El análisis reveló patrones de consumo críticos para la planificación de inventario:
+Tras un análisis exhaustivo utilizando tablas dinámicas y medidas de tendencia central robustas (mediana), se llegaron a las siguientes conclusiones:
 
-### 📅 El Impacto de la Estacionalidad (Fechas Especiales)
-* **Picos Navideños:** Se identificó que las semanas previas a Navidad y Acción de Gracias representan los picos máximos de facturación anual, superando en un **X%** a una semana promedio.
-    * *Acción:* El inventario debe reforzarse 4 semanas antes de estas fechas, no durante.
-* **Super Bowl vs. Labor Day:** A diferencia de las festividades familiares, fechas como el Super Bowl muestran un impacto alto pero focalizado en departamentos específicos (probablemente Alimentos y Bebidas), mientras que otros departamentos no sufren variación.
+### 🏢 Dinámica de las Tiendas
+* **Tamaño vs. Ventas:** Existe una correlación positiva clara: las tiendas más grandes son las que generan mayor volumen de ventas.
+* **Dominio del Tipo A:** Las tiendas "Tipo A" son las líderes en facturación. Aunque esto se explica parcialmente porque son mayoría en cantidad, también son las que ejecutan estrategias de promoción más agresivas.
 
-### 🏢 Rendimiento por Tipo de Tienda
-* **Tiendas Tipo A (Dominantes):** Representan el mayor volumen de ventas y son las más sensibles a las promociones (Markdowns).
-* **Tiendas Tipo C:** Mantienen un flujo de ventas más estable pero con tickets promedio más bajos, sugiriendo una estrategia de "conveniencia" más que de "destino".
+### 🏷️ Estrategia de Promociones (Markdowns)
+* **Correlación de Éxito:** Las tiendas con mayores ventas son, consistentemente, las que más facturan a través de "Markdowns", validando la efectividad de las campañas de descuento.
+* **Top Performers:** Al desglosar por tipo de promoción, el **Markdown 1** demostró ser el más efectivo para generar ingresos, seguido de cerca por el **Markdown 5**.
 
-### 📉 Factores Externos
-* Se observó que variables macroeconómicas como el **CPI (Índice de Precios al Consumidor)** o el precio del combustible tienen una correlación menor con las ventas inmediatas en comparación con los descuentos promocionales (Markdowns), lo que indica que el cliente responde más a ofertas directas que al contexto económico general en compras minoristas.
+### 📅 Temporalidad y Tendencias
+* **La Caída del 2012:** Se detectó una contracción generalizada del negocio. Todas las tiendas vendieron menos en 2012 en comparación con 2011, un patrón sistémico confirmado por las líneas de tendencia individuales.
+* **Estaciones Pico:** Contrario a lo esperado, la mediana de ventas indica que **Primavera y Verano** son las estaciones de mayor rendimiento comercial.
+* **El Paradigma de los Feriados:** Al analizar la mediana de ventas (para evitar sesgos por outliers), se descubrió que en los días feriados se vende **aproximadamente la mitad** en comparación con días normales.
 
+### 🌡️ Factores Externos (Macroeconomía)
+* **Temperatura:** Se observa un leve aumento en las ventas a medida que la temperatura desciende, sugiriendo una oportunidad para productos estacionales de frío.
+* **Impacto Económico Limitado:** Variables como el **CPI** (Índice de Precios), el precio del **Combustible** y la tasa de **Desempleo** mostraron correlaciones bajas o tendencias muy leves, indicando que las ventas de la cadena son relativamente resilientes a variaciones macroeconómicas moderadas.
 ---
 
 ## 📁 Estructura del Repositorio
