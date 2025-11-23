@@ -1,0 +1,12 @@
+ # --- Archivos Temporales de Excel/Office ---
+~$*
+*.tmp
+
+# --- Archivos de Sistema ---
+desktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+.DS_Store
+
+# --- Archivos PDF temporales (si los hubiera) ---
+*.log
